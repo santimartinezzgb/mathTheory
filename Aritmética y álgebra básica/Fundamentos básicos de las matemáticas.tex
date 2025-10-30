@@ -1,0 +1,272 @@
+\documentclass[14pt]{extarticle}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{titlesec}
+\renewcommand{\contentsname}{Índice}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+
+
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\end{center}}
+\title{Fundamentos básicos de las matemáticas}
+\author{por Santi Martínez}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \section{Aritmética y álgebra básica}
+        Es la rama de las matemáticas que trabaja con \textbf{números} y las \textbf{operaciones básicas} entre ellos.
+
+        \subsection*{\underline{Aritmética}}
+
+            \subsubsection*{Operaciones fundamentales}
+                \begin{center}
+                $a + b$, $a - b$, $a \times b$, $\frac{a}{b} \; (b \neq 0)$
+                \end{center}
+
+            \subsubsection*{Principales propiedades}
+                \begin{itemize}
+                    \item \textbf{Conmutativa}. $a × b = b × a$
+                    \item \textbf{Asociativa}. $(a + b) + c = a + (b + c)$
+                    \item \textbf{Distributiva}. $a × (b + c) = a×b + a×c$
+                \end{itemize}
+
+            \subsubsection*{Potenciación y redicación}
+                \begin{center}
+                $a^m \times a^n = a^{m+n} , \quad (a^m)^n = a^{mn} , \sqrt[n]{a^m} = a^{m/n}$
+                \end{center}
+
+
+        \subsection*{\underline{Álgebra}}
+
+                \subsubsection*{Expresiones algebraicas}
+                    \begin{center}
+                        $P(x)= a_n x^n + a_{n-1} x^{n-1} + ... + a_1 x + a_0$
+                    \end{center}
+
+                \subsubsection*{Ecuaciones}
+                    \begin{center}
+                        $2x + 5 = 11 \longrightarrow x = 3$
+                    \end{center}
+
+                \subsubsection*{Identidades y factorización}
+                    \begin{center}
+                        $(a+b)^2 = a^2 + 2ab + b^2$
+                        \\$(a-b)^2 = a^2 - 2ab + b^2$
+                        \\$a^2+ b^2 = (a-b)(a+b)$
+                    \end{center}
+
+                \subsubsection*{Sistemas de ecuaciones lineales}
+                    \[\begin{cases}
+                        a_1 x + b_1 y = c_1 \\
+                        a_2 x + b_2 y = c_2
+                    \end{cases}
+                    \quad \Longrightarrow \quad
+                    x = \frac{c_1 b_2 - c_2 b_1}{a_1 b_2 - a_2 b_1}, \;\;
+                    y = \frac{a_1 c_2 - a_2 c_1}{a_1 b_2 - a_2 b_1}
+                    \]
+
+                \subsubsection*{Funciones}
+                    \begin{center}
+                        \textbf{Función cuadrática}: $f(x) = ax^2 + bx + c$ \\
+                        \textbf{Función lineal}: $f(x) = mx + b$
+                    \end{center}
+
+
+
+    \newpage
+    \section{Ecuaciones y desigualdades}
+
+        \subsection{Ecuaciones}
+            Una ecuación es una \textbf{igualdad} que contienen una o más variables. Resolverla significa hallar los valores que completan dicha igualdad.
+            \\\\Tipos principales:
+                        
+            \subsubsection*{Lineales}
+                \begin{center}
+                    $ax + b+ 0 \longrightarrow x = (-b / a)$
+                \end{center}
+
+            \subsubsection*{Cuadráticas}
+                \[ax^2 + bx + c = 0 \quad \Longrightarrow \quad
+                x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+
+            \subsubsection*{Polinómicas}
+                \[P(x) = 0 \quad , \quad
+                P(x) \in \mathbb{R} [x]\]
+
+        \newpage
+        \subsection{Desigualdades}
+            Una desidgualdad \textbf{compara dos expresiones algebraicas} mediante los símbolos:
+            \begin{center}
+                $<,>,\le,\ge$
+            \end{center}
+
+            \subsubsection*{Propiedades básicas}
+                Sumar o restar el mismo número no cambia el sentido de la desigualdad:
+                    \[a < b \quad \Longrightarrow \quad
+                    a + c < b + c\]
+
+                Multiplicar o dividir por un \textbf{número positivo} mantiene el sentido; por un \textbf{número negativo}, invierte el sentido:
+                    \[
+                    a < b \quad \Longrightarrow \quad
+                    -a > -b\]
+
+            \subsubsection*{Ejemplo lineal}
+                    \[2x -3 < 5 \quad \Longrightarrow \quad
+                    2x < 8 \quad \Longrightarrow \quad
+                    x < 4\]
+
+            \subsubsection*{Desigualdad cuadrática}
+                    Resolver: $2x^2 + bx + c > 0$
+                    \begin{enumerate}
+                        \item Hallar raices de $ax^2 + bx + c = 0$.
+                        \item Analizar el signo del trinomio en los intervalos determinados por las raices.
+                        \item Elegir los intervalos dende la desigualdad se cumple.
+                    \end{enumerate}
+
+
+    \newpage
+    \section{Funciones y gráficas}
+            Una función es una relación entre dos conjuntos, donde cada elemento del dominio se asocia con un único elemento del codominio.
+            \[f : X \longrightarrow Y
+            \quad , \quad
+            x \mapsto f(x)\]
+            \\$\mapsto$: x se le asigna x²
+
+            \subsection*{Funciones lineales}
+                \[f(x) = mx + b\]
+                Es una recta que sube o baja según $m$ y que cruza el eje $y$ en $b$.
+
+            \subsection*{Funciones cuadráticas}
+                \[f(x) = ax^2 + bx + c\]
+                Parábola que abre hacia arriba si $a>0$ y hacia abajo si $a<0$.
+                \\\\Vértice: $\left(-\frac{b}{2a}, f\left(-\frac{b}{2a}\right)\right)$
+
+            \subsection*{Funciones polinómicas}
+                $f(x)= a_n x^n + ... + a_1 x + a_0$
+                \\\\Comportamiento determinado por grado $n$ y coeficiente principal $a_n$.
+
+            \subsection*{Funciones racionales}
+                \[f(x)= \frac{P(x)}{Q(x)}
+                \quad , \quad
+                Q(x) \neq 0\]
+                \\\\Posibles \texttt{asintotas}* verticales y horizontales
+                \\*\textbf{Asíntota}: Línea recta a la que una curva se acerca cada vez más cuando $x$
+                o $y$ tienden a un valor extremo(muy grande o muy pequeño), pero sin llegar a tocarla.
+
+            \subsection*{Funciones exponenciales y logarítmicas}
+                \[f(x)= a^x
+                \quad , \quad
+                g(x) = \log_ax\]
+                \\Exponenciales siempre positivas; logaritmos definidas para $x > 0$.
+
+
+            \subsection*{Gráficas de funciones}
+                \begin{itemize}
+                    \item \textbf{Dominio}: Conjunto de valores posibles de $x$.
+                    \item \textbf{Rango}: Conjunto de valores posibles de $f(x)$.
+                    \item \textbf{Interceptos}:
+                            \\x-intercepto: $f(x) = 0 \Longrightarrow x$
+                            \\y-intercepto: $x = 0 \Longrightarrow f(0)$
+                    \item \textbf{Crecimiento / Decrecimiento}: Analizar la derivada $f'(x)$ si aplica.
+                    \item \textbf{Simetría}: 
+                            \\Par: $f(-x) = f(x)$
+                            \\Impar: $f(-x) = -f(x)$
+                \end{itemize}
+            
+
+    \newpage
+    \section{Trigonometría}
+            Estudia las relaciones entre los ángulos y los lados de un triángulo, y las funciones que describen esas relaciones en el \textbf{círculo unitario}.
+
+            \subsection*{Razones trigonométricas en el triángulo rectángulo}
+                Para un triángulo rectángulo con ángulo agudo $\theta$*
+                \[\sin \theta = \frac{cateto-opuesto}{hipotenusa}
+                \quad , \quad
+                \cos \theta = \frac{cateto-adyacente}{hipotenusa}
+                \quad , \quad
+                \tan \theta = \frac{cateto-opuesto}{cateto-adyacente}\]
+
+                \textbf{$*\theta$}: Relación entre ángulos y lados en un triángulo rectángulo.
+
+                Otras razones derivadas:
+                \[\csc \theta = \frac{1}{\sin \theta}
+                \quad , \quad
+                \sec \theta = \frac{1}{\cos \theta}
+                \quad , \quad
+                \cot \theta = \frac{1}{\tan \theta}\]
+
+            \subsection*{Identidades trigonométricas fundamentales}
+
+                \begin{center}
+                $\sin^2 \theta + \cos^2 \theta = 1$ \\
+                $1 + \tan^2 \theta = \sec^2 \theta$ \\
+                $1 + \cot^2 \theta = \csc^2 \theta$
+                \end{center}
+
+            \subsection*{Fórmulas de adición y sustracción}
+
+                \begin{center}
+                $\sin(\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta$ \\
+                $\cos(\alpha \pm \beta) = \cos \alpha \cos \beta \pm \sin \alpha \sin \beta$ \\
+                $\sin(\alpha \pm \beta) = \frac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta} $
+                \end{center}
+
+            \newpage
+            \subsection*{Doble y mitad de ángulo}
+                \begin{flushleft}
+                \begin{center}
+                $\sin(2\theta) = 2 \sin\theta\cos\theta$\\
+                $\cos(2\theta) = \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta$\\
+                $\tan(2\theta) = \frac{2\tan\theta}{1 - \tan^2\theta}$
+                \end{center}
+                \end{flushleft}
+
+
+            \subsection*{Funciones trigonométricas en el círculo unitario}
+
+
+
+
+    \newpage
+    \section{Geometría analítica}
+
+
+
+    \newpage
+    \section{Límites y continuidad}
+
+
+
+    \newpage
+    \section{Derivadas y aplicaciones}
+
+
+
+    \newpage
+    \section{Integrales}
+
+
+    \newpage
+    \section{Matrices y determinantes}
+
+
+    \newpage
+    \section{Vectores, espacios vectoriales, álgebra lineal básica}
+
+
+    \newpage
+    \section{Lógica matemática y combinatoria}
+
+
+
+
+
+\end{document}
