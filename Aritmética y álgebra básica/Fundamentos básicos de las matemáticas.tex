@@ -231,24 +231,112 @@
 
 
             \subsection*{Funciones trigonométricas en el círculo unitario}
+                Relacionan los ángulos con las coordenadas de los puntos en un circulo de radio 1 centrado en el origen (0,0)
+                \begin{center}
+                \begin{itemize}
+                    \item Círculo unitario: radio $r = 1$, centro en $(0,0)$
+                    \item Ángulo $\theta$: medido desde el eje positivo $x$, en sentido contrario a las manecillas del reloj
+                    \item Coordenadas de un punto: $(x, y) = (\cos\theta, \sin\theta)$
+                \end{itemize}
+                \end{center}
 
-
+                Funciones prinicpales:
+                \begin{center}
+                \begin{itemize}
+                    \item Seno: $\sin\theta = y$
+                    \item Coseno: $\cos\theta = x$
+                    \item Tangente: $\tan\theta = \frac{y}{x}$ (si $x \neq 0$)
+                    \item Cotangente: $\cot\theta = \frac{x}{y}$ (si $y \neq 0$)
+                    \item Secante: $\sec\theta = \frac{1}{x}$ (si $x \neq 0$)
+                    \item Cosecante: $\csc\theta = \frac{1}{y}$ (si $y \neq 0$)
+                \end{itemize}
+                \end{center}
 
 
     \newpage
     \section{Geometría analítica}
+        Combina álgebra y geometría. Sirve para estudiar figuras geométricas usando coordenadas y ecuaciones.
+        \\Es decir, en lugar de dibujar solo un triángulo o una línea, podemos respesentarlos con números y fórmulas, lo que permite calcular distancias, pendientes, puntos de insercción, etc.
 
+        \begin{itemize}
+            \item Se trabaja normalmente en plano cartesiano.
+            \item Las figuras como líneas, rectas, círculos y parábolas se pueden describir con ecuaciones algebraicas.
+        \end{itemize}
+
+        En resumen, \textbf{traduce la geometría en números y ecuaciones}.
 
 
     \newpage
     \section{Límites y continuidad}
 
+        \subsection*{Límites}
+            El límite de una función nos dice hacia qué valor se acerca la función cuando la variable $x$ se acerca a un número específico
+            \\\\\textbf{Idea clave}: No importa lo que pase en ese punto, sino hacia qué valor se aproxima la función.
+
+            \[\lim_{x \longrightarrow a} f(x) = L\]
+
+            \begin{center}
+                "El límite de $f(x)$ cuando $x$ tiende a $a$ es $L$".
+            \end{center}
+
+            Ante $\frac{0}{0}$, al ser indeterminada, habría que factorizar.
+
+        \newpage
+        \subsection*{Continuidad}
+            Una función es continua en un punto si no tiene saltos, agujeros ni interrupciones.
+
+            \subsubsection*{Condiciones para que f(x) sea continua en x=a}
+                \begin{enumerate}
+                    \item $f(a)$ existe
+                    \item $\lim_{x \longrightarrow a} f(x)$ existe
+                    \item $\lim_{x \longrightarrow a} f(x) = f(a)$
+                \end{enumerate}
+                Si alguna de estas falla, la función \textbf{no es continua} en es punto.
+
+                Ejemplo:
+                \[f(x) = x^2\]
+                \begin{itemize}
+                    \item En $x=3$, tenemos $f(3)=9$
+                    \item $\lim_{x \longrightarrow 3} x^2 = 9$
+                    \item Coinciden $\longrightarrow$ La función es continua en $x=3$
+                \end{itemize}
 
 
     \newpage
     \section{Derivadas y aplicaciones}
+        La derivada de una función mide \textbf{la velocidad de cambio} de esa función en un punto.
+        \begin{itemize}
+            \item Qué tan rápido cambia $y$ y cuando cambia $x$.
+            \item En geometría: es la \textbf{pendiente de la tangente a la curva} en un punto.
+        \end{itemize}
+        \[f'(x) \quad o \quad \frac{dy}{dx}\]
 
+        \subsection*{Idea clave}
+            Si tenemos una función $y= f(x)$
+            \[ f'(x) = \lim_{h \longrightarrow 0} \frac{f(x+h)-f(x)}{h}\]
+            \begin{itemize}
+                \item Este se llama \textbf{definición formal de la derivada}
+                \item Básicamente comparamos \textbf{el cambio de $y$ dividido por el cambio de $x$} y hacemos que $x+h$ se acerque a $x$.
+            \end{itemize}
 
+        \subsection*{Ejemplo}
+            Función:
+            \[f(x) = x^2\]
+            Derivada usando la definición:
+            \[ f'(x) = \lim_{h \longrightarrow 0} \frac{(x+h)^2 - x^2}{h}\]
+            Expandiendo:
+            \[(x+h)^2 -x^2 = x^2+2xh+h^2-x^2  = 2xh+h^2\]
+            Dividimos entre h:
+            \[\frac{2xh+h^2}{h} = 2x+h\]
+            Tomamos el límite cuando $h \longrightarrow 0$:
+            \[f'(x)=2x\]
+            Entonces la derivada de $x^2$ es $2x$
+
+        \subsection*{Interpretación}
+            Si $f(x) = x^2$, en $x=3$
+            \[f'(x) = 2 \times 3 =6\]
+            Esto significa que \textbf{$x=3$, la curva sube 6 unidades de $y$ por cada unidad que avanzamos de $x$}.
+            \\\\Geométricamente: \textbf{la pendiente de la tangente en $x=3$ es 6.}
 
     \newpage
     \section{Integrales}

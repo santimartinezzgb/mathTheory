@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1761831842.27966 "/home/santi/Escritorio/Matemáticas/Teoría/Aritmética y álgebra básica/Fundamentos básicos de las matemáticas.tex" "Fundamentos básicos de las matemáticas.pdf" "Fundamentos básicos de las matemáticas" 1761831842.53021 0
-  "/etc/texmf/web2c/texmf.cnf" 1761766874.02204 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/santi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk" 1761769820.08714 16944 a8fe87bf2fdd404d56b048af43d03604 ""
-  "/home/santi/Escritorio/Matemáticas/Teoría/Aritmética y álgebra básica/Fundamentos básicos de las matemáticas.tex" 1761831842.13257 9931 a786daddca62f234fb87c2e7d137557a ""
+["pdflatex"] 1761846199.1061 "/home/santi/Escritorio/mathTheory/Aritmética y álgebra básica/Fundamentos básicos de las matemáticas.tex" "Fundamentos básicos de las matemáticas.pdf" "Fundamentos básicos de las matemáticas" 1761846200.70439 0
+  "/etc/texmf/web2c/texmf.cnf" 1760474945.68955 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/santi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk" 1761834356.50005 16944 5170a00f6f0e017f1890658f9b518872 ""
+  "/home/santi/Escritorio/mathTheory/Aritmética y álgebra básica/Fundamentos básicos de las matemáticas.tex" 1761846198.39456 14692 7d372d342ffa707ba6f63f1ce5b5cd9b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -117,11 +117,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1761766878.35125 128028 f533b797fba58d231669ea19e894e23e ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1761766897 6800783 b86c6111383ee7b78823cccc8356b1e2 ""
-  "Fundamentos básicos de las matemáticas.aux" 1761831842.49274 1500 c886fa0fdbf8dfa642dfee526bcf95c5 "pdflatex"
-  "Fundamentos básicos de las matemáticas.tex" 1761831842.13257 9931 a786daddca62f234fb87c2e7d137557a ""
-  "Fundamentos básicos de las matemáticas.toc" 1761831842.49274 934 02d04dfc11af43a9ac32d11ec8776a43 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1760474955.90983 128028 f533b797fba58d231669ea19e894e23e ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1760474974 6822932 8bae5a0e0f9628ffb962f7e3b09a02a3 ""
+  "Fundamentos básicos de las matemáticas.aux" 1761846200.50811 1500 a49283a46d72151065396cdc5d74b73d "pdflatex"
+  "Fundamentos básicos de las matemáticas.tex" 1761846198.39456 14692 7d372d342ffa707ba6f63f1ce5b5cd9b ""
+  "Fundamentos básicos de las matemáticas.toc" 1761846200.51011 934 ae647a92fb0f1f3249ff4e4bb3defec7 "pdflatex"
   (generated)
   "Fundamentos básicos de las matemáticas.aux"
   "Fundamentos básicos de las matemáticas.log"

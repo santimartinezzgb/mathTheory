@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {4}Trigonometría}{9}{}%
 \contentsline {section}{\numberline {5}Geometría analítica}{11}{}%
 \contentsline {section}{\numberline {6}Límites y continuidad}{12}{}%
-\contentsline {section}{\numberline {7}Derivadas y aplicaciones}{13}{}%
-\contentsline {section}{\numberline {8}Integrales}{14}{}%
-\contentsline {section}{\numberline {9}Matrices y determinantes}{15}{}%
-\contentsline {section}{\numberline {10}Vectores, espacios vectoriales, álgebra lineal básica}{16}{}%
-\contentsline {section}{\numberline {11}Lógica matemática y combinatoria}{17}{}%
+\contentsline {section}{\numberline {7}Derivadas y aplicaciones}{14}{}%
+\contentsline {section}{\numberline {8}Integrales}{16}{}%
+\contentsline {section}{\numberline {9}Matrices y determinantes}{17}{}%
+\contentsline {section}{\numberline {10}Vectores, espacios vectoriales, álgebra lineal básica}{18}{}%
+\contentsline {section}{\numberline {11}Lógica matemática y combinatoria}{19}{}%
