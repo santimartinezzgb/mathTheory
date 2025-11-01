@@ -311,26 +311,13 @@
         \end{itemize}
         \[f'(x) \quad o \quad \frac{dy}{dx}\]
 
-        \subsection*{Idea clave}
-            Si tenemos una función $y= f(x)$
-            \[ f'(x) = \lim_{h \longrightarrow 0} \frac{f(x+h)-f(x)}{h}\]
-            \begin{itemize}
-                \item Este se llama \textbf{definición formal de la derivada}
-                \item Básicamente comparamos \textbf{el cambio de $y$ dividido por el cambio de $x$} y hacemos que $x+h$ se acerque a $x$.
-            \end{itemize}
+        \subsection*{Reglas de implementación}
+            Regla del potencia: $\frac{d}{dx} (x^n) = nx^{n-1}$\\\\
+            Regla del producto: $(uv)' = u'v+uv'$\\\\
+            Regla de Suma/Resta: $(u\pm v')=u'\pm v'$\\\\
+            Regla de cociente: $\left(\frac{u}{v}\right)'= \frac{u'v-uv'}{v^2}$\\\\
+            Cadena: $(f(g(x)))' = f(g(x)) g'(x)$
 
-        \subsection*{Ejemplo}
-            Función:
-            \[f(x) = x^2\]
-            Derivada usando la definición:
-            \[ f'(x) = \lim_{h \longrightarrow 0} \frac{(x+h)^2 - x^2}{h}\]
-            Expandiendo:
-            \[(x+h)^2 -x^2 = x^2+2xh+h^2-x^2  = 2xh+h^2\]
-            Dividimos entre h:
-            \[\frac{2xh+h^2}{h} = 2x+h\]
-            Tomamos el límite cuando $h \longrightarrow 0$:
-            \[f'(x)=2x\]
-            Entonces la derivada de $x^2$ es $2x$
 
         \subsection*{Interpretación}
             Si $f(x) = x^2$, en $x=3$
@@ -338,10 +325,74 @@
             Esto significa que \textbf{$x=3$, la curva sube 6 unidades de $y$ por cada unidad que avanzamos de $x$}.
             \\\\Geométricamente: \textbf{la pendiente de la tangente en $x=3$ es 6.}
 
+        \subsection*{Derivadas básicas}
+            \begin{itemize}
+                \item $(c)' = 0$
+                \item $(x)' = 1$
+                \item $(e^x)' = e^x$
+                \item $(a^x)' = a^x \ln (a)$
+                \item $(\ln x)' = 1/x$
+                \item $(\sin x)' = \cos x$
+                \item $(\cos x) = -\sin x'$
+                \item $(\tan x)' = \sec^2 x$
+            \end{itemize}
+
     \newpage
     \section{Integrales}
+        La integración es la operación inversa de la derivación y se utiliza para calculas áreas, volúmenes y acumulaciones.
+            \subsection*{\underline{Reglas de integración}}
+            \begin{itemize}
+                \item \textbf{Potencia:} $\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad , \quad n\neq-1$
+                \item \textbf{Exponenciales:} $\int\frac{1}{x}dx=\ln {|x|} + c$
+                \item \textbf{Logaritmicas:} $\int e^xdx=e^x+c$
+                \item \textbf{Suma / resta:} $\int \sin x  dc = -\cos x +c$
+                \item \textbf{Reglas trigonométricas:}
+                    \[
+                    \int \sin x\,dx = -\cos x + C \quad 
+                    \int \cos x\,dx = \sin x + C
+                    \]
+                    \[
+                    \int \sec^2 x\,dx = \tan x + C \quad 
+                    \int \csc^2 x\,dx = -\cot x + C
+                    \]
+                    \[
+                    \int \sec x \tan x\,dx = \sec x + C \quad 
+                    \int \csc x \cot x\,dx = -\csc x + C
+                    \]
+            \end{itemize}
+
+        \subsection*{\underline{Integral indefinida}}
+            Representa una \textbf{familia de funicones} cuya derivada es $f(x)$:
+            \[ \int f(x)dx=F(x)+C\]
+            donde $C$ es la constante de integración
 
 
+        \subsection*{\underline{Integral definida}}
+            Representa el \textbf{área bajo la curva} de $f(x)$ entre $a$ y $b$
+            \[\int_{a}^{b} f(x) dx = F(b) - F(a)\]
+            Propiedades:
+            \[\int_{a}^{a} f(x)dx=0\]
+            \[\int_{a}^{b} f(x)dx = - \int_{b}^{a} f(x)dx\]
+            \[\int_{a}^{b} [f(x)+g(x)]dx = \int_{a}^{b} f(x)dx + \int_{a}^{b} g(x)dx\]\\
+
+        \subsection*{\underline{Métodos de integración}}
+            \subsubsection*{Por sustitución}
+                Si $u = g(x)$, entonces:
+                \[\int f(g(x))g'(x)dx = \int f(u)du\]
+            \subsubsection*{Por partes}
+                \[\int u dv = uv - \int v du\]
+            \subsubsection*{Fracciones parciales}
+                Descomposición de funciones racionales:
+                \[\int \frac{P(x)}{Q(x)}dx\]
+            \subsubsection*{Trigonométricas y sustituciones especiales}
+                \begin{itemize}
+                    \item $x=a \sin \theta \longrightarrow $ para $\sqrt{a^2 - x^2}$
+                    \item $x=a \tan \theta \longrightarrow $ para $\sqrt{a^2 + x^2}$
+                \end{itemize}
+
+        \subsection*{\underline{Teorema fudamental del cálculo}}
+            Conecta derivación e integración:
+            \[\frac{d}{dx}   \left(\int_{a}^{x} f(t)dt \right) = f(x)\]
     \newpage
     \section{Matrices y determinantes}
 

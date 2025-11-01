@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {6}Límites y continuidad}{12}{}%
 \contentsline {section}{\numberline {7}Derivadas y aplicaciones}{14}{}%
 \contentsline {section}{\numberline {8}Integrales}{16}{}%
-\contentsline {section}{\numberline {9}Matrices y determinantes}{17}{}%
-\contentsline {section}{\numberline {10}Vectores, espacios vectoriales, álgebra lineal básica}{18}{}%
-\contentsline {section}{\numberline {11}Lógica matemática y combinatoria}{19}{}%
+\contentsline {section}{\numberline {9}Matrices y determinantes}{19}{}%
+\contentsline {section}{\numberline {10}Vectores, espacios vectoriales, álgebra lineal básica}{20}{}%
+\contentsline {section}{\numberline {11}Lógica matemática y combinatoria}{21}{}%
