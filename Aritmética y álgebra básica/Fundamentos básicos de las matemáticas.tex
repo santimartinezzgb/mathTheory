@@ -341,25 +341,29 @@
     \section{Integrales}
         La integración es la operación inversa de la derivación y se utiliza para calculas áreas, volúmenes y acumulaciones.
             \subsection*{\underline{Reglas de integración}}
-            \begin{itemize}
-                \item \textbf{Potencia:} $\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad , \quad n\neq-1$
-                \item \textbf{Exponenciales:} $\int\frac{1}{x}dx=\ln {|x|} + c$
-                \item \textbf{Logaritmicas:} $\int e^xdx=e^x+c$
-                \item \textbf{Suma / resta:} $\int \sin x  dc = -\cos x +c$
-                \item \textbf{Reglas trigonométricas:}
-                    \[
-                    \int \sin x\,dx = -\cos x + C \quad 
-                    \int \cos x\,dx = \sin x + C
-                    \]
-                    \[
-                    \int \sec^2 x\,dx = \tan x + C \quad 
-                    \int \csc^2 x\,dx = -\cot x + C
-                    \]
-                    \[
-                    \int \sec x \tan x\,dx = \sec x + C \quad 
-                    \int \csc x \cot x\,dx = -\csc x + C
-                    \]
-            \end{itemize}
+                \begin{table}[h!]
+                \centering
+                \[
+                \begin{array}{|c|c|c|}
+                \hline
+                \textbf{Función } f(x) & \textbf{Derivada } f'(x) & \textbf{Observaciones} \\
+                \hline
+                \sin x & \cos x & \text{Derivada positiva} \\
+                \hline
+                \cos x & -\sin x & \text{Cambia el signo} \\
+                \hline
+                \tan x = \dfrac{\sin x}{\cos x} & \sec^2 x & \sec x = \dfrac{1}{\cos x} \\
+                \hline
+                \cot x = \dfrac{\cos x}{\sin x} & -\csc^2 x & \csc x = \dfrac{1}{\sin x} \\
+                \hline
+                \sec x = \dfrac{1}{\cos x} & \sec x \tan x & \text{Producto de ambas} \\
+                \hline
+                \csc x = \dfrac{1}{\sin x} & -\csc x \cot x & \text{Signo negativo} \\
+                \hline
+                \end{array}
+                \]
+                \caption{Derivadas básicas de funciones trigonométricas}
+                \end{table}
 
         \subsection*{\underline{Integral indefinida}}
             Representa una \textbf{familia de funicones} cuya derivada es $f(x)$:
@@ -399,6 +403,64 @@
 
     \newpage
     \section{Vectores, espacios vectoriales, álgebra lineal básica}
+        Entidad matemática que tiene magnitud (tamaño) y dirección.
+        \\\\Se utiliza para representar desplazamientos, fuerzas velocidades y otras cantidades físicas o geométricas que no se escriben solo con un número.
+        \subsection*{\underline{Características principales}}
+            \begin{itemize}
+                \item \textbf{Magnitud $||$v$||$} $\longrightarrow$ longitud del vector
+                \item \textbf{Dirección $\longrightarrow$} la orientación del vector en el espacio
+                \item \textbf{Sentido $\longrightarrow$} hacia qué lado apunta
+                \item \textbf{Punto de aplicación} (opcional en algunos contextos)  $\longrightarrow$ el punto desde donde se "origina" el vector
+            \end{itemize}
+
+        \subsection*{\underline{Representación}}
+            Un vector puede representarse de varias formas:
+            \begin{itemize}
+                \item \textbf{Gráfica} como una flecha en el plano o el espacio.
+                \item \textbf{Algebraica (componentes)}: 
+                    \\En 2D: \textbf{v = (x,y)}
+                    \\En 3D: \textbf{v = (x,y,z)}
+                \item \textbf{Vector unitario}: vector de magnitud 1, usado para indicar dirección
+            \end{itemize}
+
+
+        \subsection*{\underline{Operaciones con vectores}}
+            \subsubsection*{Suma}
+                \[(x_1,y_1)+(x_2,y_2)=(x_1+x_2,y_1+y_2)\]
+                $\longrightarrow$ Se suman componente a componente
+            \subsubsection*{Resta}
+                \[(x_1,y_1)-(x_2,y_2)=(x_1-x_2,y_1-y_2)\]
+            \subsubsection*{Producto por un escalar}
+                \[k(x,y) =(kx,ky)\]
+                $\longrightarrow$ cambia la magnitud, puede invertir el sentido
+            \subsubsection*{Producto punto (escalar)}
+                \[\vec{a} \cdot \vec{b} =a_x b_x + a_y b_y + a_z b_z\]
+                $\longrightarrow$ da un número. Indica cuánto apuntan en la misma dirección.
+            \subsubsection*{Producto cruz (solo en 3D)}
+                \[\vec{a} \times \vec{b}
+                = (a_y b_z - a_z b_y,\; a_z b_x - a_x b_z,\; a_x b_y - a_y b_x)
+                \]
+                $\longrightarrow$ da un \textbf{vector perpendicular} a ambos.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.5\textwidth]{vector.png}
+                \caption{Vector}
+                \label{fig:ejemplo}
+            \end{figure}
+        
+        \subsection*{\underline{Magnitud o módulo}}
+            \[||v||=\sqrt{x^2+y^2+z^2}\]
+
+        \subsection*{\underline{Conceptos relacionados}}
+            \begin{itemize}
+                \item \textbf{Vector nulo}: (0,0,0) , sin dirección ni magnitud.
+                \item \textbf{Vectores paralelos}: tienen la misma dirección (uno es múltiplo escalar del otro)
+                \item \textbf{Vectores ortogonales}: su producto punto es 0.
+                \item \textbf{Base canónica}: vectores unitarios de referencia, por ejemplo \textbf{i,j,k}
+            \end{itemize}
+
+
 
 
     \newpage
